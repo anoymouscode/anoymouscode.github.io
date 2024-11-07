@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page with Media and Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 使内容在主轴上居中 */
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #0056b3;
+            margin: 20px 0;
+            text-align: center; /* 标题水平居中 */
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+            text-align: center; /* 段落居中 */
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            width: 80%; /* 视频宽度调整为视口宽度的80% */
+            margin: 20px auto; /* 水平居中 */
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .full-image {
+            width: 70%; /* 完整图片宽度 */
+            margin: 20px auto; /* 水平居中 */
+            height: auto; /* 图片高度自适应 */
+        }
+        .small-images-row {
+            display: flex;
+            justify-content: center; /* 图片行居中 */
+            margin: 20px auto;
+            width: 70%; /* 图片行宽度 */
+            flex-wrap: wrap; /* 允许图片行换行 */
+        }
+        .small-image {
+            width: 30%; /* 小图片宽度 */
+            margin: 1%; /* 图片间距 */
+            height: auto; /* 图片高度自适应 */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #003d82;
+        }
+        .text-description {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MassV2X: A Multimodal Safety-critical Scenario Dataset at Consecutive Intersections for Vehicle-Infrastructure Cooperative Perception</h1>
+    <p>This is a simple page with images, videos, and links.</p>
+
+    <!-- First Image -->
+    <img src="ph1.jpg" alt="Sample Image 1" class="full-image">
+
+    <!-- Second Image -->
+    <img src="ph2.jpg" alt="Sample Image 2" class="full-image">
+
+    <!-- Third Image -->
+    <img src="ph3.jpg" alt="Sample Image 3" class="full-image">
+
+    <!-- Fourth Image -->
+    <img src="ph4.jpg" alt="Sample Image 4" class="full-image">
+
+    <div class="text-description">
+        <h2>Video Description 1</h2>
+        <p>This video showcases the first scenario...</p>
+    </div>
+
+    <!-- First Video -->
+    <div class="video-container">
+        <video controls>
+            <source src="v1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="text-description">
+        <h2>Video Description 2</h2>
+        <p>This video demonstrates the second scenario...</p>
+    </div>
+
+    <!-- Second Video -->
+    <div class="video-container">
+        <video controls>
+            <source src="v2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Small Images Row -->
+    <div class="small-images-row">
+        <img src="ph5.jpg" alt="Sample Image 5" class="small-image">
+        <img src="ph6.jpg" alt="Sample Image 6" class="small-image">
+        <img src="ph7.jpg" alt="Sample Image 7" class="small-image">
+    </div>
+
+    <!-- Buttons with Links -->
+    <a href="https://www.github.com/getting-started/github-pages" target="_blank">
+        <button>Use GitHub</button>
+    </a>
+    <br><br>
+    <a href="https://blog.csdn.net/WHYbeHERE/article/details/140378572" target="_blank">
+        <button>Create Website</button>
+    </a>
+</body>
+</html>
